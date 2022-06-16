@@ -7,14 +7,14 @@
         link.type ='text/css';
         link.rel = 'stylesheet';
         link.href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        head.appendChild('link');
+        // head.appendChild('link');
         
         const body = document.querySelector('body');
         const image = document.createElement('img');
         // image.src = chrome.runtime.getURL('./assets/Hello_There.png');
-        image.style.style="position:absolute; left:100px; top:170px;";
-        image.src = 'https://imgsv.imaging.nikon.com/lineup/coolpix/p/p7000/img/sample/img_02_b.jpg';
+        image.src = 'https://imgur.com/gallery/0KzJv4b';
         image.classList.add('animate_animated','animate__fadeInUp');
+        image.style = "height: 400px; width: 400px; float: left; float: bottom";
         body.appendChild(image);
         image.addEventListener('animationend', () => {
             image.classList.remove('animate_animated','animate__fadeInUp');

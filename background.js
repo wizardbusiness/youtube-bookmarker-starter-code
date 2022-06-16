@@ -12,17 +12,4 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
     }
   });
 
-  chrome.tabs.onUpdated.addListener(
-    function(tabId, changeInfo, tab) {
-      // read changeInfo data
-      if (changeInfo.url) {
-        // url has changed; do something here
-        // like send message to content script
-        chrome.tabs.sendMessage( tabId, {
-          message: 'hello!',
-          url: changeInfo.url
-        })
-      }
-    }
-  );
   //check service workers, listen for new tabs//
